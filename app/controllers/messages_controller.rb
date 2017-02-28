@@ -4,6 +4,8 @@ class MessagesController < ApplicationController
   def index
     @messages = Message.all
     @contacts = Contact.all
+    @weather_object = FindHumidity.new("97210")
+    @humidity = @weather_object.get_humidity()
   end
 
   def new

@@ -14,6 +14,7 @@ gem 'devise'
 gem 'vcr'
 gem 'rest-client'
 gem 'webmock'
+gem 'httparty'
 
 
 group :development, :test do
