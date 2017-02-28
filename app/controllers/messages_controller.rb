@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
 
   def index
     @messages = Message.all
+    @contacts = Contact.all
   end
 
   def new
@@ -17,7 +18,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     if @message.save
       flash[:notice] = "Saved!"
-      redirect_to new_message_path
+      redirect_to root_path
     else
       render 'new'
     end

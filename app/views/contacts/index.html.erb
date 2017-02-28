@@ -1,13 +1,17 @@
-<h1>Contacts</h1>
-<% @contacts.each do |contact| %>
-  <p>
-    <%= contact.name %>
-  </p>
-  <p>
-    <%= contact.number %>
-  </p>
-<% end %>
+<article class="panel">
+  <header>
+    <h1>Contacts</h1>
+    <% @contacts.each do |contact| %>
+      <p>
+        <%= contact.name %>
+      </p>
+      <p>
+        <%= contact.number %>
+      </p>
+    <% end %>
 
 
-<h4>New Contact</h4>
-<%= render 'form', contact: Contact.new %>
+    <h4>New Contact</h4>
+    <%= render 'form', contact: Contact.new %>
+  </header>
+</article>

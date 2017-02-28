@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'vcr'
 gem 'rest-client'
+gem 'webmock'
 
 
 group :development, :test do
